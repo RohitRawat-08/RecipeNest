@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.recipe-ingredients,
+.recipe-instructions,
+.recipe-category,
+.recipe-author {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.recipe-ingredients strong,
+.recipe-instructions strong,
+.recipe-category strong,
+.recipe-author strong {
+    color: #555;
+}
+
+.recipe-ingredients {
+    color: #6c757d;
+}
+
+.recipe-instructions {
+    color: #495057;
+}
+
+.recipe-category {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.recipe-author {
+    text-align: right;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 90%;
+    }
+}
+
+.form-container form {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form div {
+    margin-bottom: 15px;
+}
+
+.form-container form label {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    border-color: #007bff;
+}
+
+form button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* General Button Styling */
+.eddel{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    /* border: 2px solid red; */
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+/* Edit Button (Green Background) */
+.btn-edit {
+    background-color: #28a745;
+}
+
+.btn-edit:hover {
+    background-color: #218838;
+    /* transform: scale(1.05); */
+}
+
+/* Delete Button (Red Background) */
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    /* transform: scale(1.05); */
+}
+
+
+
+
+.profile{
+    /* border: solid red; */
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.profile-card {
+    width: 550px; 
+    height: 60%;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+    text-align: center; 
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-card h2 {
+    /* margin-bottom: 35px;  */
+    font-size: 17px;
+    color: #007BFF; 
+    font-weight: bold;
+    /* border:solid red; */
+    text-align: start;
+}
+
+
+.profile-card h2 a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease;
+    /* border:solid red; */
+}
+
+.profile-card h2 a:hover {
+    color: #0056b3; 
+}
+
+.profile-detail {
+    margin: 10px 0; 
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 10px; 
+    border-left: 4px solid #007BFF; 
+}
+
+.profile-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease-in-out;
+}

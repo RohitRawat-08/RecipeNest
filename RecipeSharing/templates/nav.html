@@ -1,0 +1,27 @@
+<nav>
+    <div class="logo"><a href="">RecipeNest</a></div>
+    
+    <ul>
+        {% if request.user.is_authenticated %}
+        <form action="{% url 'search' %}">
+            <img style="position: relative;height:20px; left: 25px; top: 3px;"  src="../static/images/search.png" alt="" ><input type="text" name="search" placeholder="Search Recipe...">
+        </form>
+        <li><a href="{% url 'home' %}">Recipes</a></li>
+        <li><a href="{% url 'your_recipe' %}">Your Recipes</a></li>
+        <li><a href="{% url 'add_recipe' %}">Add Recipe</a></li>
+        <!-- <li><a href="">Update</a> </li>
+        <li><a href="">Delete</a> </li> -->
+        <li>
+            <img src="../static/images/profile.png" alt="" height="32px">
+            <div class="popup">
+                <a href="{% url 'Profile' %}">My Profile</a>
+                <a href="{% url 'LogOut' %}">Logout</a>
+            </div>
+        </li>
+        {% else %}
+        <li><a href="{% url 'LogIn' %}">Login</a></li>
+        <li><a href="">About</a></li>
+        {% endif %}
+        
+    </ul>
+</nav> 

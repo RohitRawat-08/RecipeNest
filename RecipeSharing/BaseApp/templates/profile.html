@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <div class="profile">
+        <div class="profile-card">
+            <h2><a href="#">Info</a></h2>
+            <hr>
+            <h3 class="profile-detail">Full Name: <strong> {{request.user.first_name}} {{request.user.last_name}} </strong></h3>
+            <h3 class="profile-detail">UserName: <strong> {{request.user}}</strong></h3>
+            <h3 class="profile-detail">Email: <strong>{{request.user.email}} </strong></h3>
+            <h3 class="profile-detail">Joining Date: <strong> {{request.user.date_joined}}</strong></h3>
+        </div>
+    </div>
+
+
+{% endblock content %}

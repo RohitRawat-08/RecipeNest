@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    {% if noMatch%}
+        <h2>No Data Found</h2>
+    {% else %}
+    <div class="recipe-container">
+        {% for i in data %}
+            <div class="recipe-card">
+                <h2 class="recipe-title">{{ i.title }}</h2>
+                <p class="recipe-ingredients"><strong>Ingredients:</strong> {{ i.ingredients }}</p>
+                <p class="recipe-instructions"><strong>Instructions:</strong> {{ i.instruction }}</p>
+                <p class="recipe-category"><strong>Category:</strong> {{ i.catrgory }}</p>
+                <p class="recipe-author"><strong>Author:</strong> {{ i.author }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+{% endblock content %}
+
+
