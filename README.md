@@ -16,7 +16,7 @@ Recipe Nest is a Django-based web app where users can share and explore recipes.
 ![App Screenshot](https://github.com/RohitRawat-08/RecipeNest/blob/master/RecipeSharing/static/ss/rn1.PNG)
 
 - Home Page (after login)
-- 
+  
 ![App Screenshot](https://github.com/RohitRawat-08/RecipeNest/blob/master/RecipeSharing/static/ss/rn2.PNG)
 
 - User Profile Page
@@ -27,7 +27,7 @@ Recipe Nest is a Django-based web app where users can share and explore recipes.
   
 ![App Screenshot](https://github.com/RohitRawat-08/RecipeNest/blob/master/RecipeSharing/static/ss/rn4.PNG)
 
-- Your Recipe Page
+- Your Recipe Page (we can edit and delete recipies)
   
 ![App Screenshot](https://github.com/RohitRawat-08/RecipeNest/blob/master/RecipeSharing/static/ss/rn5.PNG)
 
